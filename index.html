@@ -5,46 +5,47 @@
     <title>Week 4 Game</title>
     <link href="assets\css\style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
+          <h1> Crystals Collector </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+          <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-lg-4">
+          <h1 id="gameNumber"></h1>
+        </div>
 
-          <div class="card-deck">
+        <div class="col-lg-4">
+          Win: <strong><span id="wins"></span><br></strong>
+          Losses: <strong><span id="losses"></span></strong>
+        </div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-lg-4">
+          <img id="redCrystal" class="crystal" src="assets\images\redCrystal.png">
+          <img id="blueCrystal" class="crystal" src="assets\images\blueCrystal.png">
+          <img id="yellowCrystal" class="crystal" src="assets\images\yellowCrystal.png">
+          <img id="greenCrystal" class="crystal" src="assets\images\greenCrystal.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <br>
+          <p>Your total score is: <br><h1><span id="totalScore"></h1></p>
 
-          <div class="card text-center" style="width: 10rem;">
-           <h4 class="card-title">The Coon</h4>
-            <img class="card-img-top" src="assets/images/the-coon.png" alt="Card image cap" style="width: 150px; margin: auto;">
-            <div class="card-block">
-            <p class="card-text">300 pts</p>
-            </div>
-          </div>
-          <div class="card text-center" style="width: 10rem;">
-           <h4 class="card-title">The Coon</h4>
-            <img class="card-img-top" src="assets/images/cartman.png" alt="Card image cap" style="width: 150px; margin: auto;">
-            <div class="card-block">
-            <p class="card-text">300 pts</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h2> Characters available to attack</h2>
-          <div
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h2> Defender</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h2> controls</h2>
-          <button type="button" class="btn btn-danger attack">Attack</button>
-          <button type="button" class="btn btn-primary reset">Reset</button>
         </div>
       </div>
     </div>
